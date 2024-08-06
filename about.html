@@ -14,7 +14,7 @@
         <!-- CSS -->
         <link rel="stylesheet" href="./style.css">
 </head>
-<body class="bg-gray-100">
+<body class="bg-gray-100 flex flex-col min-h-screen">
     <nav class="bg-sky-200 p-4 text-white font-medium">
         <div class="container mx-auto flex justify-between items-center">
             <a href="index.html">
@@ -34,11 +34,11 @@
             </button>
         </div>
         <!-- Mobile menu -->
-        <div class="md:hidden flex flex-col gap-3 space-y-4 text-amber-950 mt-2" id="mobile-menu" style="display: none;">
-            <a href="index.html" class="hover:font-bold">Home</a>
-            <a href="about.html" class="hover:font-bold">About</a>
-            <a href="logbook.html" class="hover:font-bold">Logbook</a>
-            <a href="contact.html" class="hover:font-bold">Contact</a>
+        <div class="md:hidden bg-sky-100 text-amber-950 mt-2 rounded-lg shadow-lg overflow-hidden transition-all duration-300 ease-in-out" id="mobile-menu" style="display: none;">
+            <a href="index.html" class="block px-4 py-2 hover:bg-sky-300">Home</a>
+            <a href="about.html" class="block px-4 py-2 hover:bg-sky-300">About</a>
+            <a href="logbook.html" class="block px-4 py-2 hover:bg-sky-300">Logbook</a>
+            <a href="contact.html" class="block px-4 py-2 hover:bg-sky-300">Contact</a>
         </div>
     </nav>
 
@@ -48,5 +48,23 @@
             <p class="text-gray-700">Coming soon.</p>
         </div>
     </main>
+
+    <footer class="bg-sky-200 text-sky-800 py-4 hidden">
+        <div class="container mx-auto text-center text-xs">
+            <p>&copy; 2024 KKN Mekarsari 256</p>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript for toggling the mobile menu
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            var menu = document.getElementById('mobile-menu');
+            if (menu.style.display === 'none' || menu.style.display === '') {
+                menu.style.display = 'block';
+            } else {
+                menu.style.display = 'none';
+            }
+        });
+    </script>
 </body>
 </html>

@@ -16,16 +16,29 @@
 </head>
 <body class="bg-gray-100">
     <nav class="bg-sky-200 p-4 text-white font-medium">
-        <div class="container mx-auto flex justify-between">
-            <a href="index.html" class="font-bold text-xl ">
-                <img src="./img/logo.png" alt="" class="w-16">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="index.html">
+                <img src="./img/logo.png" alt="Logo" class="w-16">
             </a>
-            <div class="space-x-4 text-amber-950 my-auto">
+            <div class="hidden md:flex space-x-4 text-amber-950">
                 <a href="index.html" class="hover:font-bold">Home</a>
                 <a href="about.html" class="hover:font-bold">About</a>
                 <a href="logbook.html" class="hover:font-bold">Logbook</a>
                 <a href="contact.html" class="hover:font-bold">Contact</a>
             </div>
+            <button class="md:hidden text-amber-950" id="menu-toggle">
+                <!-- Hamburger icon -->
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </div>
+        <!-- Mobile menu -->
+        <div class="md:hidden flex flex-col gap-3 space-y-4 text-amber-950 mt-2" id="mobile-menu" style="display: none;">
+            <a href="index.html" class="hover:font-bold">Home</a>
+            <a href="about.html" class="hover:font-bold">About</a>
+            <a href="logbook.html" class="hover:font-bold">Logbook</a>
+            <a href="contact.html" class="hover:font-bold">Contact</a>
         </div>
     </nav>
 

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KKN Mekarsari 256 - Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body class="bg-gray-100 flex flex-col min-h-screen">
+    <nav class="bg-sky-200 p-4 text-white font-medium">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="index.html" class="font-bold text-lg md:text-xl">
+                <img src="./img/logo.png" alt="Logo" class="w-12 md:w-16">
+            </a>
+            <div class="hidden md:flex space-x-4 text-amber-950">
+                <a href="index.html" class="hover:font-bold">Home</a>
+                <a href="about.html" class="hover:font-bold">About</a>
+                <a href="logbook.html" class="hover:font-bold">Logbook</a>
+                <a href="contact.html" class="hover:font-bold">Contact</a>
+            </div>
+            <button class="md:hidden text-amber-950" id="menu-toggle">
+                <!-- Hamburger icon -->
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </div>
+        <!-- Mobile menu -->
+        <div class="md:hidden bg-sky-100 text-amber-950 mt-2 rounded-lg shadow-lg overflow-hidden transition-all duration-300 ease-in-out" id="mobile-menu" style="display: none;">
+            <a href="index.html" class="block px-4 py-2 hover:bg-sky-300">Home</a>
+            <a href="about.html" class="block px-4 py-2 hover:bg-sky-300">About</a>
+            <a href="logbook.html" class="block px-4 py-2 hover:bg-sky-300">Logbook</a>
+            <a href="contact.html" class="block px-4 py-2 hover:bg-sky-300">Contact</a>
+        </div>
+    </nav>
+
+    <main class="flex-grow mb-10">
+        <div class="mx-5 md:mx-10 mt-5">
+            <p class="mb-3">
+                <a href="logbook.html" class="text-xs text-blue-500 hover:text-blue-900 hover:font-bold">Kembali</a>
+            </p>
+            <h1 class="text-xl md:text-2xl font-bold">Mengajar SDN Kiarapayung dan Mengadakan Lomba Tasyakuran Kemerdekaan di Madrasah Al-Qiro'ah RW 02
+            </h1>
+            <p class="text-xs md:text-sm font-medium text-blue-800">Senin 12 Agustus 2024</p>
+            <p>SDN Kiarapayung | TPA Al-Qiroah RW 02</p>
+        </div>
+        
+        <div class="flex flex-col justify-center items-center mt-7 mx-5 md:mx-auto gap-5">
+            <img src="./img/12/1.jpg" alt="Pembukaan 1" class="w-full md:w-1/2 self-center">
+            <img src="./img/12/2.jpg" alt="Pembukaan 2" class="w-full md:w-1/2 self-center">
+
+        </div>
+
+        <div class="mx-5 md:mx-10 mt-7">
+            <div>
+                <p>
+                    Hari Senin, tanggal 12 Agustus 2024, menjadi hari yang cukup padat dengan berbagai kegiatan positif.
+<br><br>
+1. Mengajar di SDN Kiarapayung:
+<br>
+Pada pagi hari, kegiatan diawali dengan mengajar di Sekolah Dasar Negeri Kiarapayung. Kegiatan mengajar ini merupakan bagian dari rutinitas sehari-hari sebagai pendidik, namun tetap memiliki arti penting dalam mencetak generasi muda yang cerdas dan berakhlak mulia. Melalui proses belajar mengajar, diharapkan siswa-siswi SDN Kiarapayung dapat memperoleh ilmu pengetahuan yang bermanfaat dan mengembangkan potensi diri mereka.
+<br><br>
+2. Mengadakan Lomba Tasyakuran Kemerdekaan di Madrasah Al-Qiro'ah RW 02:
+<br>
+Sore harinya, kegiatan dilanjutkan dengan mengadakan lomba tasyakuran kemerdekaan di Madrasah Al-Qiro'ah RW 02. Kegiatan ini bertujuan untuk memeriahkan peringatan Hari Kemerdekaan Republik Indonesia ke-79 sekaligus memupuk semangat nasionalisme pada generasi muda. Berbagai lomba menarik disiapkan, seperti lomba makan kerupuk, joget kursi, estafet karet dan lomba balap kelereng  Selain itu, acara ini juga dihadiri oleh beberapa wali murid dan warga sekitar yang antusias dengan adanya kegiatan tersebut. 
+<br><br>
+Tujuan Kegiatan:
+<br>
+Mengajar di SDN Kiarapayung: Mentransfer ilmu pengetahuan kepada siswa-siswi, membentuk karakter yang baik, dan meningkatkan kualitas pendidikan.
+Mengadakan Lomba Tasyakuran Kemerdekaan: Memupuk semangat nasionalisme, mempererat tali silaturahmi antar warga, dan memberikan hiburan bagi anak-anak.
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-sky-200 text-sky-800 py-4">
+        <div class="container mx-auto text-center text-xs md:text-sm">
+            <p>&copy; 2024 KKN Mekarsari 256</p>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript for toggling the mobile menu
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            var menu = document.getElementById('mobile-menu');
+            if (menu.style.display === 'none' || menu.style.display === '') {
+                menu.style.display = 'block';
+            } else {
+                menu.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>

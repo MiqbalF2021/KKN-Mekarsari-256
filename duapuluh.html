@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KKN Mekarsari 256 - Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body class="bg-gray-100 flex flex-col min-h-screen">
+    <nav class="bg-sky-200 p-4 text-white font-medium">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="index.html" class="font-bold text-lg md:text-xl">
+                <img src="./img/logo.png" alt="Logo" class="w-12 md:w-16">
+            </a>
+            <div class="hidden md:flex space-x-4 text-amber-950">
+                <a href="index.html" class="hover:font-bold">Home</a>
+                <a href="about.html" class="hover:font-bold">About</a>
+                <a href="logbook.html" class="hover:font-bold">Logbook</a>
+                <a href="contact.html" class="hover:font-bold">Contact</a>
+            </div>
+            <button class="md:hidden text-amber-950" id="menu-toggle">
+                <!-- Hamburger icon -->
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </div>
+        <!-- Mobile menu -->
+        <div class="md:hidden bg-sky-100 text-amber-950 mt-2 rounded-lg shadow-lg overflow-hidden transition-all duration-300 ease-in-out" id="mobile-menu" style="display: none;">
+            <a href="index.html" class="block px-4 py-2 hover:bg-sky-300">Home</a>
+            <a href="about.html" class="block px-4 py-2 hover:bg-sky-300">About</a>
+            <a href="logbook.html" class="block px-4 py-2 hover:bg-sky-300">Logbook</a>
+            <a href="contact.html" class="block px-4 py-2 hover:bg-sky-300">Contact</a>
+        </div>
+    </nav>
+
+    <main class="flex-grow mb-10">
+        <div class="mx-5 md:mx-10 mt-5">
+            <p class="mb-3">
+                <a href="logbook.html" class="text-xs text-blue-500 hover:text-blue-900 hover:font-bold">Kembali</a>
+            </p>
+            <h1 class="text-xl md:text-2xl font-bold">Kegiatan terakhir Posyandu bulan ini di dusun 2
+            </h1>
+            <p class="text-xs md:text-sm font-medium text-blue-800">Selasa 20 Agustus 2024</p>
+            <p>Posyandu RW 04</p>
+        </div>
+        
+        <div class="flex flex-col justify-center items-center mt-7 mx-5 md:mx-auto gap-5">
+            <img src="./img/20/1.jpg" alt="Pembukaan 1" class="w-full md:w-1/2 self-center">
+            <img src="./img/20/2.jpg" alt="Pembukaan 1" class="w-full md:w-1/2 self-center">
+        </div>
+
+        <div class="mx-5 md:mx-10 mt-7">
+            <div>
+                <p>
+                    Pada tanggal 20 Agustus 2024, kelompok KKN kami turut berpartisipasi dalam kegiatan PKK Posyandu RW 04 di Dusun 2. Kegiatan ini merupakan kegiatan terakhir Posyandu di bulan ini, yang dilaksanakan rutin sekali dalam sebulan di setiap RW dengan jadwal yang telah ditentukan. Seperti biasa, program ini disambut antusias oleh para ibu-ibu dan balita yang datang untuk memeriksakan kesehatan mereka.
+<br><br>
+Selama kegiatan berlangsung, kelompok kami membantu dalam berbagai hal, seperti pendataan, penimbangan berat badan, dan pengukuran tinggi badan balita. Semua data yang terkumpul kemudian dicatat dengan teliti untuk memantau perkembangan kesehatan anak-anak di wilayah tersebut. Keterlibatan kami dalam proses ini memberikan pengalaman berharga dan pemahaman yang lebih mendalam tentang pentingnya kesehatan balita di komunitas setempat.
+<br><br>
+Kegiatan PKK Posyandu ini sangat penting karena memungkinkan deteksi dini terhadap berbagai masalah kesehatan pada balita, termasuk stunting. Oleh karena itu, keberlanjutan program ini sangat diharapkan agar masyarakat tetap bisa memantau kesehatan balita mereka dengan rutin dan mendapatkan informasi yang akurat tentang pertumbuhan anak-anak mereka.
+<br><br>
+Kami berharap kegiatan PKK Posyandu di Dusun 2 dan di seluruh wilayah lainnya dapat terus berjalan dengan baik. Kegiatan ini bukan hanya sekadar rutinitas, tetapi menjadi garda terdepan dalam menjaga kesehatan generasi muda dan mencegah stunting sejak dini. Ke depan, kami berkomitmen untuk terus mendukung program-program kesehatan yang ada di masyarakat.
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-sky-200 text-sky-800 py-4">
+        <div class="container mx-auto text-center text-xs md:text-sm">
+            <p>&copy; 2024 KKN Mekarsari 256</p>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript for toggling the mobile menu
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            var menu = document.getElementById('mobile-menu');
+            if (menu.style.display === 'none' || menu.style.display === '') {
+                menu.style.display = 'block';
+            } else {
+                menu.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>

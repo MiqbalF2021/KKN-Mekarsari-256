@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KKN Mekarsari 256 - Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body class="bg-gray-100 flex flex-col min-h-screen">
+    <nav class="bg-sky-200 p-4 text-white font-medium">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="index.html" class="font-bold text-lg md:text-xl">
+                <img src="./img/logo.png" alt="Logo" class="w-12 md:w-16">
+            </a>
+            <div class="hidden md:flex space-x-4 text-amber-950">
+                <a href="index.html" class="hover:font-bold">Home</a>
+                <a href="about.html" class="hover:font-bold">About</a>
+                <a href="logbook.html" class="hover:font-bold">Logbook</a>
+                <a href="contact.html" class="hover:font-bold">Contact</a>
+            </div>
+            <button class="md:hidden text-amber-950" id="menu-toggle">
+                <!-- Hamburger icon -->
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </div>
+        <!-- Mobile menu -->
+        <div class="md:hidden bg-sky-100 text-amber-950 mt-2 rounded-lg shadow-lg overflow-hidden transition-all duration-300 ease-in-out" id="mobile-menu" style="display: none;">
+            <a href="index.html" class="block px-4 py-2 hover:bg-sky-300">Home</a>
+            <a href="about.html" class="block px-4 py-2 hover:bg-sky-300">About</a>
+            <a href="logbook.html" class="block px-4 py-2 hover:bg-sky-300">Logbook</a>
+            <a href="contact.html" class="block px-4 py-2 hover:bg-sky-300">Contact</a>
+        </div>
+    </nav>
+
+    <main class="flex-grow mb-10">
+        <div class="mx-5 md:mx-10 mt-5">
+            <p class="mb-3">
+                <a href="logbook.html" class="text-xs text-blue-500 hover:text-blue-900 hover:font-bold">Kembali</a>
+            </p>
+            <h1 class="text-xl md:text-2xl font-bold">Kegiatan diseminasi membangun budaya positif dalam pembelajaran dan Kegiatan penutupan dan perlombaan dalam rangka tasyakuran 17 Agustus di TPA Al-Qiroah
+            </h1>
+            <p class="text-xs md:text-sm font-medium text-blue-800">Kamis 15 Agustus 2024</p>
+            <p>SDN Kiarapayung | Lapangan Desa Sukatani | Posko KKN UIN Kelompok 256</p>
+        </div>
+        
+        <div class="flex flex-col justify-center items-center mt-7 mx-5 md:mx-auto gap-5">
+            <img src="./img/15/1.jpg" alt="Pembukaan 1" class="w-full md:w-1/2 self-center">
+            <img src="./img/15/2.jpg" alt="Pembukaan 1" class="w-full md:w-1/2 self-center">
+        </div>
+
+        <div class="mx-5 md:mx-10 mt-7">
+            <div>
+                <p>
+                    Kegiatan Pertama : 
+Pada tanggal 15 Agutus 2024 dengan agenda kunjungan pengabdian ke SDN Kiara Payung, mahasiswa KKN terlibat dalam aktivitas mengajar dengan anak-anak, saling bertukar informasi mengenai tentang perkuliahan, menanyakan cita-cita yang di inginkan oleh anak-anak dan sebagainya. Mahasiswa KKN memberikan kertas berbentuk daun yang ditulis oleh anak-anak mengenai cita-cita yang diinginkan oleh mereka di masa depan nanti. Setelah itu, anak-anak menempalkan kertas tersebut dikarton yang sudah ada gambar pohon. Kertas yang telah di tempel di karton tersebut di sebut dengan 'Pohon Impian'
+<br><br>
+Kegiatan Kedua :
+Mahasiswa KKN berkunjung ke kecamatan untuk melihat acara perlombaan yang dilaksanakan oleh masyarakat sekitar. Kegiatan yang dilakukan oleh masyrakat disana cukup beragam mulai dari tarik tambang, balap karung, lomba makan kerupuk dan sebagainya. Kami dari mahasiswa KKN memberikan support kepada warga dengan cara berkunjung, berkumpul sambil bersilaturahmi dengan warga disana. 
+<br><br>
+Kegiatan Ketiga : 
+Mahasiswa KKN UIN SGD Bandung kelompok 256, 257 dan 258 Desa Mekarsari berkumpul dengan anak ISBI untuk membicarakan kolaborasi mengenai pelaksanaan festival yang akan dilaksanakan pada tanggal 17 Agustus. Kami membicarakan mengenai tema dan konsep yang akan ditampilkan kepada masyrakar saat festival nanti.
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-sky-200 text-sky-800 py-4">
+        <div class="container mx-auto text-center text-xs md:text-sm">
+            <p>&copy; 2024 KKN Mekarsari 256</p>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript for toggling the mobile menu
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            var menu = document.getElementById('mobile-menu');
+            if (menu.style.display === 'none' || menu.style.display === '') {
+                menu.style.display = 'block';
+            } else {
+                menu.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>
